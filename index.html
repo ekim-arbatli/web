@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ekim Arbatli - Political Scientist</title>
     <style>
+        /* Original styles preserved */
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 20px;
-            max-width: 800px;
+            padding: 30px 20px;
+            max-width: 900px;
             margin: 0 auto;
         }
         header {
@@ -31,53 +32,78 @@
             color: #333;
             font-size: 16px;
         }
-        .profile-section {
-            text-align: center;
+
+        /* Profile section adjustments */
+        .main-content {
+            display: flex;
+            gap: 60px;
             margin-bottom: 40px;
         }
+
+        .profile-column {
+            flex: 0 0 280px;
+            margin-top: 15px;
+        }
+
         .profile-photo {
-            width: 250px; /* Adjust width as needed */
-            height: auto; /* Maintain aspect ratio */
-            margin-bottom: 20px;
+            width: 100%;
+            height: auto;
             border: 3px solid #333;
-            border-radius: 4px; /* Slightly rounded corners (optional) */
+            border-radius: 4px;
+            margin-bottom: 20px;
         }
-        .quick-links {
-            margin: 20px 0;
+
+        .content-column {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        /* Links under photo */
+        .profile-links {
+            text-align: center;
             font-size: 18px;
+            margin-top: 15px;
         }
-        .quick-links a {
-            margin: 0 15px;
+
+        .profile-links a {
+            margin: 0 10px;
             text-decoration: none;
             color: #2c3e50;
             font-weight: 500;
         }
-        .bio {
-            text-align: left;
-            font-size: 16px;
-            line-height: 1.8;
-        }
-        /* Add Twitter/X icon styling */
+
+        /* Preserved original styles */
         .twitter-icon {
             width: 20px;
             height: 20px;
             vertical-align: middle;
             margin-left: 25px;
         }
-        /* Adjust Google Scholar icon styling */
+
         .google-scholar-icon {
-            width: 26px; /* Slightly larger */
-            height: 26px; /* Slightly larger */
-            vertical-align: middle; /* Align with the Twitter bird */
-            margin-left: 25px; /* Consistent spacing */
+            width: 26px;
+            height: 26px;
+            vertical-align: middle;
+            margin-left: 25px;
         }
+
         .contact-section a {
-        color: black; /* Set text color to black */
-        text-decoration: underline; /* Add underline */
+            color: black;
+            text-decoration: underline;
         }
-        .contact-section a:hover {
-        color: black; /* Keep text color black on hover */
-        text-decoration: underline; /* Keep underline on hover */
+
+        @media (max-width: 768px) {
+            body {
+                padding: 25px 15px;
+            }
+            .main-content {
+                flex-direction: column;
+                gap: 35px;
+            }
+            .profile-column {
+                width: 100%;
+                margin: 0 auto;
+            }
         }
     </style>
 </head>
@@ -89,13 +115,13 @@
             <a href="book.html">BOOK</a>
             <a href="research.html">RESEARCH & WRITING</a>
             <a href="teaching.html">TEACHING</a>
-            <!-- Add Twitter/X link with logo -->
+            <!-- Restored social icons -->
             <a href="https://x.com/Arbatli_Ekim" target="_blank">
                 <img src="images/tweeter_bird.png" 
                      alt="X (Twitter) Profile" 
                      class="twitter-icon">
             </a>
-            <a href="https://scholar.google.ru/citations?user=TJyQUI0AAAAJ&hl=en" target="_blank" title="Google Scholar profile">
+            <a href="https://scholar.google.ru/citations?user=TJyQUI0AAAAJ&hl=en" target="_blank">
                 <img src="images/Google-scholar-icon-1.png" 
                      alt="Google Scholar" 
                      class="google-scholar-icon">
@@ -103,37 +129,44 @@
         </nav>
     </header>
 
-    <div class="profile-section">
-        <img src="images/ekim_picture_2.jpg" alt="Ekim Arbatli" class="profile-photo">
-        <div class="quick-links">
-            <a href="research.html">Research</a> • 
-            <a href="#teaching">Teaching</a> • 
-            <a href="documents/CV.pdf" target="_blank">CV</a> • 
-            <a href="#contact">Contact</a>
+    <div class="main-content">
+        <div class="profile-column">
+            <img src="images/ekim_picture_2.jpg" alt="Ekim Arbatli" class="profile-photo">
+            <!-- Moved CV and Contact links here -->
+            <div class="profile-links">
+                <a href="documents/CV.pdf" target="_blank">CV</a> • 
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+
+        <div class="content-column">
+            <div class="bio">
+                <h2>About</h2>
+                <p>I am an Associate Professor of Political Science at HSE University, specializing in comparative politics and authoritarian regimes. My research examines democratic backsliding, political polarization, and strategies of authoritarian survival through both quantitative analysis and in-depth case studies.</p>
+
+                <p>Currently, I'm completing a book manuscript titled <em>"The Perfect Storm: Aspiring Autocrats and Democratic Breakdown in Turkey, Hungary and Venezuela"</em>, which investigates contemporary autocratization processes through an actor-centric framework. My work has been published in leading journals including <em>Democratization</em> and <em>Energy Research & Social Science</em>, and recognized with the Polity Prize for Best Article.</p>
+
+                <p>I hold a PhD in Political Science from the University of Connecticut and have over a decade of teaching experience in comparative politics, research methods, and democratization studies. At HSE University, I've received multiple teaching awards including Best Lecturer (2018, 2020) and Best Academic Advisor (2019).</p>
+            </div>
         </div>
     </div>
 
+    <!-- Remaining sections -->
     <div class="bio">
-        <h2>About</h2>
-        <p>I am an Associate Professor of Political Science at HSE University, specializing in comparative politics and authoritarian regimes. My research examines democratic backsliding, political polarization, and strategies of authoritarian survival through both quantitative analysis and in-depth case studies.</p>
-
-        <p>Currently, I'm completing a book manuscript titled <em>"The Perfect Storm: Aspiring Autocrats and Democratic Breakdown in Turkey, Hungary and Venezuela"</em>, which investigates contemporary autocratization processes through an actor-centric framework. My work has been published in leading journals including <em>Democratization</em> and <em>Energy Research & Social Science</em>, and recognized with the Polity Prize for Best Article.</p>
-
-        <p>I hold a PhD in Political Science from the University of Connecticut and have over a decade of teaching experience in comparative politics, research methods, and democratization studies. At HSE University, I've received multiple teaching awards including Best Lecturer (2018, 2020) and Best Academic Advisor (2019).</p>
-
-        <h3>Current Projects</h3>
+        <h2>Current Projects</h2>
         <ul>
             <li>Political polarization and coup likelihood in democracies</li>
             <li>Local government strategies and religious associations in Turkey</li>
             <li>Special journal issue on societal polarization</li>
         </ul>
     </div>
+    
     <div id="contact" class="contact-section">
         <h2>Contact</h2>
-        <p> Personal e-mail: 
+        <p>Personal e-mail: 
             <a href="mailto:ekimarbatli@gmail.com">ekimarbatli@gmail.com</a>
         </p>
-        <p> University e-mail: 
+        <p>University e-mail: 
             <a href="mailto:ekimarbatli@hse.ru">ekimarbatli@hse.ru</a>
         </p>
     </div>
