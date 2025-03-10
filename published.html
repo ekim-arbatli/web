@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 2px solid #333;
+            margin-bottom: 30px;
+        }
+        .name-header {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+        .profile-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .profile-photo {
+            width: 250px; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 20px;
+            border: 3px solid #333;
+            border-radius: 4px; /* Slightly rounded corners (optional) */
+        }
+        .quick-links {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+        .quick-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+        .bio {
+            text-align: left;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        /* Add Twitter/X icon styling */
+        .twitter-icon {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-left: 25px;
+        }
+        /* Adjust Google Scholar icon styling */
+        .google-scholar-icon {
+            width: 26px; /* Slightly larger */
+            height: 26px; /* Slightly larger */
+            vertical-align: middle; /* Align with the Twitter bird */
+            margin-left: 25px; /* Consistent spacing */
+        }
+        /* Contact section styling */
+        .contact-section {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #333;
+        }
+        .contact-section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .contact-section p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        /* Email link styling */
+        .contact-section a {
+            color: black; /* Set text color to black */
+            text-decoration: underline; /* Add underline */
+        }
+        .contact-section a:hover {
+            color: black; /* Keep text color black on hover */
+            text-decoration: underline; /* Keep underline on hover */
+        }
+        /* Research section styling */
+        .research-section {
+            margin-top: 40px;
+        }
+        .research-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .research-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .research-section li {
+            margin-bottom: 20px;
+        }
+        .research-section a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+        .research-section a:hover {
+            text-decoration: underline;
+        }
+        .research-section p {
+            font-size: 18px;
+            text-align: justify;
+        }
+        .research-intro {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between image and text */
+}
+
+.research-intro .profile-photo {
+    width: 250px; /* Keep existing width */
+    height: auto; /* Maintain aspect ratio */
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.research-intro p {
+    flex-grow: 1; /* Allow paragraph to expand and fill remaining space */
+    text-align: justify; /* Optional: Makes text more readable */
+}
+
+.abstract {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            margin-left: 20px;
+            padding-left: 15px;
+            border-left: 2px solid #ddd;
+        }
+
+        .abstract.active {
+            max-height: 1000px; /* Adjust based on your longest abstract */
+        }
+
+        .toggle-arrow {
+            cursor: pointer;
+            display: inline-block;
+            transition: transform 0.3s ease;
+            margin-left: 8px;
+            color: #2c3e50;
+        }
+
+        .toggle-arrow.active {
+            transform: rotate(180deg);
+        }
+
+        .publication-item {
+            position: relative;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="name-header">EKIM ARBATLI</div>
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="published.html">PUBLICATIONS</a>
+            <a href="research.html">CURRENT RESEARCH</a>
+            <a href="teaching.html">TEACHING</a>
+            <a href="documents/Ekim Arbatli CV_WS.pdf" target="_blank">CV</a>
+            <!-- Add Twitter/X link with logo -->
+            
+        </nav>
+    </header>
+    <div class="research-section">
+        <img src="images/publication_header.png" alt="Publications" class="publication-image">
+        <style>
+            .publication-image {
+                display: block; /* Ensures the image behaves as a block element */
+                width: 60%; /* Adjusts width, ensuring responsiveness */
+                height: auto; /* Maintains aspect ratio */
+                margin: 0; /* Centers the image horizontally and adds spacing below */
+                border-radius: 0; /* Keeps sharp edges */
+                box-shadow: none; /* Removes shadow for a clean look */
+            }
+        
+            .title {
+                text-align: left;
+                font-size: 24px; /* Adjust heading size for readability */
+                margin-top: 0; /* Ensures no extra space above the title */
+            }
+        
+            /* Ensure proper layout on smaller screens */
+            @media (max-width: 600px) {
+                .title {
+                    font-size: 20px; /* Smaller heading for small screens */
+                }
+        
+                .publication-image {
+                    width: 100%; /* Make the image full-width on smaller screens */
+                }
+            }
+        </style>
+        <h2 id="published">Published Work</h2>
+        
+        <h3>Edited Book</h3>
+        <ul class="arrow-list">
+            <li><a href="https://link.springer.com/book/10.1007/978-3-319-51454-3" target="_blank">Non-Western Social Movements and Participatory Democracy: Protest in the Age of Transnationalism</a> (2017), Switzerland: Springer (with Dina Rosenberg).</li>
+        </ul>
+        <h3>Journal Articles</h3>
+        <ul class="arrow-list">
+            <li>“<a href="http://www.tandfonline.com/doi/full/10.1080/13510347.2024.2428277" target="_blank">Proliferation of religious associations and local incumbency advantage: Evidence from municipal elections in Turkey</a>” (2024), <em>Democratization</em>, pp. 1-30. (with Cemal Eren Arbatli).</li>
+            <li>“<a href="https://www.nowpublishers.com/article/Details/PIP-0061" target="_blank">Divide and conquer: Presidents, parliaments, and political polarization during electoral campaigns</a>” (2022), <em>Journal of Political Institutions and Political Economy</em>, Vol. 3:3-4, pp. 295-315 (with Kemal Kivanc Akoz and Dina Rosenberg).</li>
+            <li>“<a href="https://www.tandfonline.com/doi/full/10.1080/13510347.2020.1818068" target="_blank">United we stand, divided we rule: How political polarization erodes democracy</a>” (2021), <em>Democratization</em>, Vol. 28:2, pp. 285-307 (with Dina Rosenberg).</li>
+            <li>“<a href="https://doi.org/10.1093/acrefore/9780190228637.013.1936" target="_blank">Armies in politics: The domestic determinants of military coup behavior</a>” (2020), in <em>Oxford Research Encyclopedia of Politics</em>, Oxford University Press, pp. 1-20.</li>
+            <li>“<a href="https://www.journals.uchicago.edu/doi/10.1086/698203" target="_blank">Elite survival strategies and authoritarian reversal in Turkey</a>” (2018), <em>Polity</em>, Vol. 50:3, pp. 333-365 (with Oksan Bayulgen and Sercan Canbolat).<br><em>Winner of the <a href="https://www.journals.uchicago.edu/journals/pol/prize" target="_blank">Polity Prize for Best Research Article</a> in 2018</em></li>
+            <li>“<a href="https://doi.org/10.1016/j.erss.2017.11.030" target="_blank">Resource nationalism revisited: A new conceptualization in light of changing actors and strategies in the oil industry</a>” (2018), <em>Energy Research & Social Science</em>, Vol: 40, pp. 101-108.</li>
+            <li>“<a href="https://doi.org/10.1093/acrefore/9780190228637.013.338" target="_blank">The international determinants of military coup behavior</a>” (2018), in William R. Thompson (ed.), <em>The Oxford Encyclopedia of Empirical International Relations Theory</em>, Oxford University Press, Vol. 2, pp. 297-321 (with Cemal Eren Arbatli).</li>
+            <li>“<a href="https://doi.org/10.1177/0738894214545956" target="_blank">External threats and political survival: Can dispute involvement deter coup attempts?</a>” (2016), <em>Conflict Management and Peace Science</em>, Vol. 33:2, pp. 115-152 (with Cemal Eren Arbatli).</li>
+            <li>“<a href="https://doi.org/10.1016/j.postcomstud.2013.08.003" target="_blank">Cold War redux in US–Russia relations? The effects of US media framing and public opinion of the 2008 Russia–Georgia war</a>” (2013), <em>Communist and Postcommunist Studies</em>, Vol. 46:4, pp. 513-527 (with Oksan Bayulgen).</li>
+        </ul>
+        
+        <h3>Chapters</h3>
+        <ul class="arrow-list">
+            <li>“Shoulder to shoulder against fascism: Publics in Gezi protests” (2019), in N. Y. Belyaeva, D. G. Zaytsev, V. A. Albert. (eds.), <em>Protest Publics: Toward a New Concept of Mass Civic Action</em>, Switzerland: Springer, pp. 33-47.</li>
+            <li>“Introduction: Non-western social movements and participatory democracy in the age of transnationalism” (2017), in Arbatli and Rosenberg (eds.), <em>Non-Western Social Movements and Participatory Democracy</em>, Switzerland: Springer, pp. 1-10.</li>
+            <li>“Conclusion: The changing face of social movements and emerging patterns across the non-Western world” (2017). In Arbatli and Rosenberg (eds.), <em>Non-Western Social Movements and Participatory Democracy</em>, Switzerland: Springer, pp. 189-197 (with Dina Rosenberg).</li>
+            <li>“Turkey’s new path: The rise of electoral authoritarianism”, <em>Research and Policy on Turkey</em> (2014), Vol. III, Issue 12, pp. 76-92.</li>
+            <li>“Persistence of military regimes and democratic consolidation: The case of Turkey” (2011). In Daniel Stockemer (ed.), <em>Democratization Around the World</em>, NY: Edwin Mellen Press, p. 13-37.</li>
+            <li>“Conclusion” (2011). In Daniel Stockemer (ed), <em>Democratization Around the World</em>, NY: Edwin Mellen Press, p. 185-192 (with Piro Rexhepi).</li>
+        </ul>
+    </div>
+    <script>
+        // Add this script at the end of your body
+        function toggleAbstract(arrow) {
+            const publicationItem = arrow.closest('.publication-item');
+            const abstract = publicationItem.querySelector('.abstract');
+            arrow.classList.toggle('active');
+            abstract.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
