@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Research on Democratic Breakdown and Authoritarian consolidation</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 2px solid #333;
+            margin-bottom: 30px;
+        }
+        .name-header {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+        }
+        .profile-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .profile-photo {
+            width: 250px; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 20px;
+            border: 3px solid #333;
+            border-radius: 4px; /* Slightly rounded corners (optional) */
+        }
+        .quick-links {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+        .quick-links a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+        .bio {
+            text-align: left;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        /* Add Twitter/X icon styling */
+        .twitter-icon {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-left: 25px;
+        }
+        /* Adjust Google Scholar icon styling */
+        .google-scholar-icon {
+            width: 26px; /* Slightly larger */
+            height: 26px; /* Slightly larger */
+            vertical-align: middle; /* Align with the Twitter bird */
+            margin-left: 25px; /* Consistent spacing */
+        }
+        /* Contact section styling */
+        .contact-section {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #333;
+        }
+        .contact-section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .contact-section p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        /* Email link styling */
+        .contact-section a {
+            color: black; /* Set text color to black */
+            text-decoration: underline; /* Add underline */
+        }
+        .contact-section a:hover {
+            color: black; /* Keep text color black on hover */
+            text-decoration: underline; /* Keep underline on hover */
+        }
+        /* Research section styling */
+        .research-section {
+            margin-top: 40px;
+        }
+        .research-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .research-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .research-section li {
+            margin-bottom: 20px;
+        }
+        .research-section p {
+            font-size: 18px;
+            text-align: justify;
+        }
+        .research-section a {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+        .research-section a:hover {
+            text-decoration: underline;
+        }
+        .research-intro {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between image and text */
+}
+
+.research-intro .profile-photo {
+    width: 250px; /* Keep existing width */
+    height: auto; /* Maintain aspect ratio */
+    flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.research-intro p {
+    flex-grow: 1; /* Allow paragraph to expand and fill remaining space */
+    text-align: justify; /* Optional: Makes text more readable */
+}
+.abstract {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        margin-left: 20px;
+        padding: 0 15px;
+        border-left: 2px solid #ddd;
+    }
+
+.abstract.active {
+            max-height: 1000px; /* Adjust based on your longest abstract */
+        }
+
+        .toggle-arrow {
+            cursor: pointer;
+            display: inline-block;
+            transition: transform 0.3s ease;
+            margin-left: 8px;
+            color: #2c3e50;
+        }
+
+        .toggle-arrow.active {
+            transform: rotate(180deg);
+        }
+
+        .publication-item {
+            position: relative;
+            margin-bottom: 15px;
+        }
+        
+    .abstract-content {
+        padding: 10px 0;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="name-header">EKIM ARBATLI</div>
+        <nav>
+            <a href="index.html">HOME</a>
+            <!-- <a href="book.html">BOOK</a>-->
+            <a href="research.html">RESEARCH</a>
+            <a href="teaching.html">TEACHING</a>
+            <a href="documents/Ekim Arbatli CV_WS.pdf" target="_blank">CV</a>
+            <!-- Add Twitter/X link with logo -->
+            <a href="https://x.com/Arbatli_Ekim" target="_blank">
+                <img src="images/tweeter_bird.png" 
+                     alt="X (Twitter) Profile" 
+                     class="twitter-icon">
+            </a>
+            <a href="https://scholar.google.ru/citations?user=TJyQUI0AAAAJ&hl=en" target="_blank" title="Google Scholar profile">
+                <img src="images/Google-scholar-icon-1.png" 
+                     alt="Google Scholar" 
+                     class="google-scholar-icon">
+            </a>
+        </nav>
+    </header>
+    <div class="research-section">
+        <h2>Trajectories of democratic breakdown and authoritarian consolidation </h2>
+        <h3>Published Work</h3>
+        <ul>
+            <li class="publication-item">
+               <strong> “<a href="https://www.tandfonline.com/doi/full/10.1080/13510347.2024.2428277" target="_blank">Proliferation of religious associations and local incumbency advantage: Evidence from municipal elections in Turkey</a>” (2024), <em>Democratization</em>, pp. 1-30 (with Cemal Eren Arbatli). 
+                <span class="toggle-arrow" onclick="toggleAbstract(this)">▼</span>
+             </strong>
+             <div class="abstract">
+                <div class="abstract-content">
+                    <p>For two decades, the Justice and Development Party (AKP) in Turkey sustained its electoral performance at the local level. We offer and test a new mechanism that contributed to the party's success in municipal elections. We argue that patronage links with religious civil society served as an important instrument of building and sustaining local incumbency advantage. Employing a close-election regression discontinuity design, we address two questions: To what extent did religious associations proliferate in AKP-controlled municipalities? Was this civil society penetration instrumental for the party’s electoral success? Employing a close-election regression discontinuity design (RDD), we show that in districts with a small-margin AKP victory in the 2014 elections, the number of religious associations in 2016 were significantly higher than in districts where AKP lost narrowly. We also find that the AKP incumbency in 2014 in closely contested districts increased the party’s vote share in the next local elections. Our results empirically demonstrate a new channel of local incumbency advantage. Moreover, we highlight the role of civil society as an agent of clientelistic exchange in competitive authoritarian regimes.</p>
+                    
+                </div>
+            </div>
+        </li>
+            </ul>
+        <h3>Work in progress </h3>
+        <ul>
+            <li class="publication-item">
+            <strong>"The perfect storm: Aspiring autocrats and democratic breakdown in Turkey, Hungary and Venezuela” (book manuscript, in progress) <span class="toggle-arrow" onclick="toggleAbstract(this)">▼</span>
+            </strong>
+            <div class="abstract">
+                <div class="abstract-content">
+            <p>This monograph aims to explain the autocratization process in these three countries over the past two decades under polarizing leaders. I build on some of the hypotheses generated in our earlier article, “Elite survival strategies and authoritarian reversal in Turkey”, which won the Polity Prize for Best Article in 2018.</p>
+
+        <p>I argue that while structural conditions matter for democratic breakdown, political regimes change when critical actors push for change, consent to change, or when they are simply too weak to resist change. I develop an actor-based framework of democratic breakdown and authoritarian consolidation that rests on leader strategies and their interaction with the citizens and elites. I start from the idea that there are two ‘brake systems’ that can stop the process of backsliding in a democracy: citizens and opposition elites within institutions. When one of these brakes stops functioning, democratic backsliding can occur. However, this backsliding should be stoppable (and reversible) when the proper institutional mechanisms are in place and the elites are strong enough to control them. Democratic breakdown only occurs when both of these mechanisms simultaneously fail. The first brake is the citizens’ norms and expectations from the regime. Structural factors such as political culture and religion can be significant, but they are generally very static and slow changing. Political preferences, on the other hand, can change dramatically; especially following periods of major economic decline or state crisis. Populism and political polarization can erode democracy, causing backsliding through incumbent takeover. However, many scholars would argue that democratic institutions should act as the second emergency brake to stop backsliding and prevent total breakdown. Hence, the institutions and the opposition elites within them acting as veto players are the second set of roadblocks for the aspiring autocrat.  </p>
+
+        <p>The process of autocratization happens through a combination of strategies targeted simultaneously towards the population, elites, and democratic institutions. The ruler has access to four key strategies: centralization, cooptation, legitimation, and repression. The leader’s access to the four strategies is not free of constraint. The optimal combination of survival strategies will differ from one regime to another, and within a single system over time. At each turn, the ability to use them will depend on factors such as the availability of material resources, the number of political cleavages within the society and their interest sets, and the strength of democratic institutions. Moreover, the strategies can have reinforcing or inhibiting effects vis-a-vis one another. The appeal of this causal framework is that it can be applied across multiple transition phases, and the mix of strategies will depend on the specifics of the regime.</p>
+    </div>
+</div>
+</li>
+</ul>
+    <script>
+        function toggleAbstract(arrow) {
+            const publicationItem = arrow.closest('.publication-item');
+            const abstract = publicationItem.querySelector('.abstract');
+            arrow.classList.toggle('active');
+            
+            if (abstract.style.maxHeight) {
+                abstract.style.maxHeight = null;
+            } else {
+                // Calculate full height of content
+                abstract.style.maxHeight = abstract.scrollHeight + "px";
+            }
+        }
+    </script>
+</body>
+</html>
